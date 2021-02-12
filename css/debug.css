@@ -1,0 +1,32 @@
+.wrapper {
+width: 100%;
+height: 100vh;
+border: 1px solid red;
+}
+.clear-fix {
+content:"";
+clear: both;
+display: table;
+}
+footer > div {
+width: calc(100% / 3);
+border: 1px solid red;
+height: 100%;
+float: left;
+}
+.footer_center_top {
+width: 100%;
+height: 50%;
+border: 1px solid red;
+}
+
+li {
+list-style: none;
+}
+a {
+text-decoration: none;
+}
+I {
+color: WHITE;
+font-size: 0.9em;
+}
