@@ -1,208 +1,220 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;
 }
-/* css main nav  */
-.main_nav{
-position: fixed;
-top: 0;
-left: 0;
-width: 200px;
-height: calc(100% - 70px);
-background-color:black;
+.container {
+display: flex;
+width: 100%;
+height: 100vh;
+background: grey;
 }
-.main_nav_logo {
-margin-left: 25px;
-width: 150px;
-height: 60px;
+/* inizio menu left */
+.menu_left {
+display: flex;
+flex-direction: column;
+width: 170px;
+height:calc(100% - 60px);
+background-color: black;
 }
-
-.main_nav_icon {
-width: 175px;
-margin-left: 25px;
-height:100px;
-}
-.main_nav_icon i {
-margin-top: 8%;
-}
-.main_nav_icon a {
-color: lightgrey;
-}
-.crea_playlist i {
-background-color: grey;
-padding: 6px;
-margin-top: 10px;
-}
-.crea_playlist span {
-color: white;
-font-family: 'Times New Roman', Times, serif;
-margin-left: 5px;
-}
-.main_nav_icon span {
+/* logo menu left */
+.logo_spotify {
 margin-left: 10px;
+width: 140px;
+height: 50px;
 }
-.main_nav_playlist {
-width: 175px;
-margin-left: 25px;
-height:65%;
-overflow-y:auto ;
-}
-.main_nav_playlist h3 {
-color: lightgrey;
-margin-top: 10px;
-margin-bottom: 10px;
-}
-.main_nav_playlist ul li {
-margin-top: 25px;
-font-size: 0.7em;
-}
-.main_nav_playlist ul li a {
-color: lightgrey;
-}
-/* fine sezione main nav */
-
-/* sezione utente john doe css */
-.jhon_doe {
-position: fixed;
-margin-left: 25px;
-bottom: 70px;
-width: 175px;
-height: 45px;
-}
-.image {
-float: left;
+#logo_piccolo {
 width: 30px;
 height: 30px;
-background-color: grey;
-border-radius: 50%;
-line-height: 45px;
+border: 1px solid red;
 }
-.image img {
-line-height: 45px;
-height: 60%;
-margin-left: 7px;
-}
-.hr {
-margin-top: 50px;
-width: 150px;
-}
-.jhon_doe span {
-color: white;
+/* fine menu left logo */
+/* inizio sezione icon menu left */
+.icon_menu_left {
+width: 160px;
+height:60px;
 margin-left: 10px;
-line-height: 45px;
 }
-/* fine sezione utente john doe  */
-.main_album {
-height: 94vh;
-width:calc(100% - 200px);
-background-color: rgb(5, 5, 7);
-margin-left: 200px;
-}
-/* sezione main album upgrade */
-.upgrade {
+.box_icon {
+margin-top: 10px;
+width:100%;
+height:18px;
 margin-bottom: 5px;
- width: 100%;
- height: 40px;
- background-color: rgba(0, 0, 0, 0.8);
-
 }
-.upgrade ul li {
-float: right;
-
+.box_icon img {
+height: 100%;
 }
-.upgrade ul li a {
-color: white;
+.box_icon a {
 text-decoration: none;
-font-size: 0.9em;
-margin-right: 20px;
-line-height: 40px;
-border: 1px solid white;
-padding: 5px;
-border-radius: 15px;
-
-
-}
-/* fine main menu upgrade */
-
-/* inizio menu selection */
-.menu_selection {
-justify-content:center;
-display: flex;
-
-}
-.menu_selection ul li {
-float: left;
-margin-left: 25px;
-font-size: 0.7em;
-letter-spacing: 2px;
-}
-.menu_selection ul li a:hover {
-    border-bottom: 2px solid lime;
-    color: white;
-    }
-/* fine menu selection */
-/* inizio sezione copertine album */
-.copertine_album {
-margin-top: 1%;
-}
-.copertine_album h2 {
+font-weight: 400;
 color: white;
-margin-left: 60px;
-margin-top: 20px;
-margin-bottom: 10px;
+margin-left: 5px;
 }
-.copertine_album h5 {
-color: grey;
-margin-left: 60px;
+/* fine icon menu left  */
+/* sezione playlist menu left */
+.menu_playlist {
+margin-top: 40px;
+width: 160px;
+height: 250px;
+margin-left: 10px;
+}
+.menu_playlist h5 {
+  font-weight: 800;
+  color: white;
+}
+.menu_playlist i {
+color: white;
+font-size: 22px;
+}
+.menu_playlist a {
+text-decoration: none;
+color: white;
+font-weight: 400;
+}
+.plus {
+margin-top: 10px;
+}
+.plus a {
+font-size: 0.9em;
+}
 
+.menu_playlist {
+overflow-y: auto;
+height: 300px;
+}
+.list_playlist ul li{
+margin-top: 15px;
+font-size: 0.7em;
+}
+/* fine sezione playlist menu left */
+/* sezione scarica app  */
+.app {
+margin-top:50px;
+margin-left: 10px;
+width:140px;
+height:30px;
+}
+.app span {
+font-size: 0.7em;
+margin-left: 10px;
+color: white;
+padding-bottom: 5px;
+}
+.app i {
+color: grey;
+margin-top: 10px;
+}
+/* fine sezione scarica app */
+/* sezione john doe */
+.john_doe {
+width: 160px;
+height: 50px;
+position: fixed;
+bottom: 60px;
+margin-left: 10px;
+}
+.john_doe i {
+color: white;
+background-color: grey;
+padding: 5px;
+border-radius: 50%;
+font-size: 0.8em;
+}
+.john_doe span {
+color: white;
+margin-left: 15px;
+margin-top: 20px;
+}
+.user {
+margin-top: 25px;
+}
+/* fine sezione john doe */
+
+/* menu left fine  */
+
+/* menu right */
+.menu_right {
+width:calc(100% - 150px);
+height:calc(100% - 60px);
+background-color:#001222;
+}
+.uppgrade {
+width: 100%;
+height: 40px;
+background-color:rgba(0, 0, 0, 0.5);
+}
+.uppgrade a {
+float: right;
+color: white;
+width: 150px;
+font-weight:600;
+padding-top: 1px;
+padding-left: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+line-height: 20px;
+margin-top: 10px;
+margin-right: 10px;
+height: 20px;
+text-decoration: none;
+border: 1px solid white;
+font-size: 12px;
+border-radius: 15px;
+text-align: center;
+}
+/* menu nav  */
+.preferiti {
+flex-wrap: wrap;
+display: flex;
+flex-direction: row;
+justify-content:center;
+width: 100%;
+}
+.preferiti a {
+color:#525252;
+text-decoration: none;
+font-weight: bold;
+padding: 0 10px;
+margin-top: 10px;
+font-size: 0.7em;
+}
+.preferiti a:hover{
+font-size: 0.6em;
+border-bottom: 2px solid lime;
+}
+/* fine menu nav  */
+/* fine menu right */
+.sezione_album_uno {
+margin-top: 10px;
+flex-wrap: wrap;
+justify-content: space-around;
+display: flex;
+flex-direction: row;
+width: 100%;
 }
 .box {
-margin-left: 60px;
-width: 130px;
-float: left;
-margin-top: 5px;
+margin-left: 3px;
+height: 145px;
+width: 140px;
 }
 .box_img {
 width: 100%;
-height: 90px;
+height: 60px;
 }
-.box_img img {
+.box img {
 width: 100%;
-height: 100px;
+height: 120px;
 }
-.box h4 {
-color: grey;
-text-align:center;
-margin-top: 10px;
-font-weight: 800;
+.description {
+text-align: center;
+margin-top: 60px;
+padding: 2px;
+color: white;
+font-weight: bold;
 }
-.box span {
-margin-left: 40px;
-color: grey;
-}
-/* fine sezione copertine album */
 
-
-footer {
-height: 70px;
-width: 100%;
+.footer {
 position: fixed;
 bottom: 0;
-left: 0;
-right: 0;
-background-color: rgb(24, 24, 26);
-    }
-
-
-
-
-
-
-
-/* sezione media */
-@media screen and (max-height:525px){
-.jhon_doe {
-display: none;
-}
+width: 100%;
+height: 60px;
+background-color: yellow;
 }

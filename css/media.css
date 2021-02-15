@@ -1,0 +1,51 @@
+@media screen and (max-height:430px) {
+  .john_doe {
+  display: none;
+  }
+}
+@media screen and (max-width:712px) {
+.preferiti a {
+font-size: 0.6em;
+}
+}
+@media screen and (min-width:426px) {
+#logo_piccolo {
+display: none;
+}
+}
+
+
+@media screen and (max-width:425px) {
+.icon_menu_left span {
+visibility: hidden;
+}
+.menu_playlist {
+visibility: hidden;
+}
+.app   hr {
+visibility: hidden;
+}
+.app span {
+visibility: hidden;
+}
+.john_doe span {
+visibility: hidden;
+}
+.menu_left {
+width: 50px;
+}
+#logo_grande {
+visibility: hidden;
+}
+#logo_piccolo {
+visibility: visible;
+}
+.menu_right {
+width: 100%;
+}
+}
+@media screen and (max-width:390px) {
+  .preferiti a {
+  font-size: 0.4em;
+  }
+}
