@@ -8,10 +8,45 @@
 font-size: 0.6em;
 }
 }
+@media screen and (max-width:768px) {
+  .recently h3 {
+  color: white;
+  margin-left: 8px;
+  font-size: 0.6em;
+  }
+  .box {
+  margin-left: 3px;
+  height: 100px;
+  width: 60px;
+  }
+  .box_img {
+  width: 60px;
+  height: 30px;
+  }
+  .box img {
+  width: 60px;
+  height: 60px;
+  }
+  .description {
+  margin-top: 30px;
+  padding: 2px;
+  color: white;
+  font-size: 0.6em;
+  font-weight: bold;
+  }
+  .recently {
+  font-size: 0.7em;
+
+  }
+  .recently span {
+  margin-left: 1px;
+  }
+}
 @media screen and (min-width:426px) {
 #logo_piccolo {
 display: none;
 }
+
 }
 
 
@@ -42,6 +77,13 @@ visibility: visible;
 }
 .menu_right {
 width: 100%;
+}
+.john_doe {
+width: 50px;
+  ;
+}
+.john_doe i {
+margin-left: 15px;
 }
 }
 @media screen and (max-width:390px) {
